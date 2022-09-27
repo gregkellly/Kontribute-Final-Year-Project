@@ -1,4 +1,4 @@
-# Junible - Make friends in University
+# Junible - Meet students at University
 
 This is the first template of our final year project
 
