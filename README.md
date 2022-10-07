@@ -1,4 +1,4 @@
-# Junible - Meet students at University
+# Kontribute - Web3 Storytelling
 
 This is the first template of our final year project
 
