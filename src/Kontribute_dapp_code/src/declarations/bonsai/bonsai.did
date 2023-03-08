@@ -1,0 +1,22 @@
+type StoryVotes = 
+ record {
+   total: nat;
+   userOption: Profile;
+   vote1: nat;
+   vote2: nat;
+   vote3: nat;
+ };
+type Profile = 
+ record {
+   hasVoted: bool;
+   whichOption: text;
+ };
+service : {
+  BonsaiOption1: () -> (text);
+  BonsaiOption2: () -> (text);
+  BonsaiOption3: () -> (text);
+  getBonsaiVotes: () -> (StoryVotes) query;
+  getBonsaiVotesII: () -> (StoryVotes) query;
+  getBonsaiVotesIII: () -> (StoryVotes) query;
+  getBonsaiVotesIV: () -> (StoryVotes) query;
+}
