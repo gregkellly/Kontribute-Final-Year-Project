@@ -1,0 +1,41 @@
+{
+  "canisters": {
+    "ito": {
+      "main": "src/kontribute_dapp/ito.mo",
+      "type": "motoko"
+    },
+    "index": {
+      "main": "src/kontribute_dapp/canDB/IndexCanister.mo",
+      "type": "motoko"
+    },
+    "storyservice": {
+      "main": "src/kontribute_dapp/canDB/StoryService.mo",
+      "type": "motoko"
+    },
+    "kontribute_dapp_assets": {
+      "dependencies": ["index"],
+      "frontend": {
+        "entrypoint": "src/kontribute_dapp_assets/src/index.html"
+      },
+      "source": [
+        "src/kontribute_dapp_assets/assets",
+        "dist/kontribute_dapp_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": "vessel sources"
+    }
+  },
+  "dfx": "0.11.2",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
