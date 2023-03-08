@@ -1,0 +1,3 @@
+[submodule "src/bonsai_dapp"]
+	path = src/bonsai_dapp
+	url = https://github.com/teambonsai/bonsai_dapp.git
